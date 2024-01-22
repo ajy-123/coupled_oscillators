@@ -1,2 +1,12 @@
 test_dataset.npy
 train_dataset.npy
+train_dataset_50rings.npy
+train_dataset_100rings.npy
+train_dataset_150rings.npy
+train_dataset_200rings.npy
+train_dataset_250rings.npy
+test_dataset_50rings.npy
+test_dataset_100rings.npy
+test_dataset_150rings.npy
+test_dataset_200rings.npy
+test_dataset_250rings.npy
