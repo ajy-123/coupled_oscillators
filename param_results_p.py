@@ -54,8 +54,10 @@ class MNISTClassifier():
 """
 Load data
 """
-train_folders = ['/home/ayeung_umass_edu/nv-nets/results/250-ring-dataset-eps-0.40-p-{}/train'.format(i) for i in ['0.10', '0.20', '0.30', '0.40', '0.50', '0.60', '0.70', '0.80', '0.90']]
-test_folders = ['/home/ayeung_umass_edu/nv-nets/results/250-ring-dataset-eps-0.40-p-{}/test'.format(i) for i in ['0.10', '0.20', '0.30', '0.40', '0.50', '0.60', '0.70', '0.80', '0.90']]
+param_range = ['0.10', '0.20', '0.30', '0.40', '0.50', '0.60', '0.70', '0.80', '0.90']
+
+train_folders = ['/work/pi_erietman_umass_edu/ayeung_umass_edu/300-ring-dataset-eps-{}-p-{}/train'.format(i,j) for i in param_range for j in param_range]
+test_folders = ['/work/pi_erietman_umass_edu/ayeung_umass_edu/300-ring-dataset-eps-{}-p-{}/test'.format(i,j) for i in param_range for j in param_range]
 
 
 def extract_seed(filename):
